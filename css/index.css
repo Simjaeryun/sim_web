@@ -67,6 +67,11 @@
   padding: 5rem;
   border-radius: 1rem;
   overflow: scroll;
+  -ms-overflow-style: none;
+}
+
+.about_section::-webkit-scrollbar {
+  display: none;
 }
 
 .about_section_header_box {
@@ -106,10 +111,41 @@
 .about_section_content_card {
   margin-top: 3rem;
   display: flex;
+  align-items: center;
 }
 
 .about_section_content img {
   width: 15rem;
   height: 15rem;
   border-radius: 5rem;
+}
+
+.about_section_content_gage {
+  width: 100%;
+  height: 5rem;
+  margin-left: 3rem;
+  border-radius: 10rem;
+  background-color: tomato;
+  position: relative;
+}
+
+.about_section_content_html_gage,
+.about_section_content_css_gage,
+.about_section_content_js_gage {
+  position: absolute;
+  border-radius: 10rem;
+  background: peru;
+  height: 5rem;
+}
+
+.about_section_content_html_gage {
+  width: 100%;
+}
+
+.about_section_content_css_gage {
+  width: 90%;
+}
+
+.about_section_content_js_gage {
+  width: 60%;
 }
