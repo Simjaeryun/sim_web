@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simjaeryun</title>
+    <script
+      src="https://kit.fontawesome.com/ed17b3b742.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="about_nav">
+        <div class="about_nav_btn"></div>
+        <a href="index.html">
+          <div class="about_nav_btn"><i class="far fa-id-card"></i></div>
+        </a>
+        <a href="photo.html"
+          ><div class="about_nav_btn"><i class="far fa-images"></i></div
+        ></a>
+        <a href="info.html"
+          ><div class="about_nav_btn">
+            <i class="fas fa-link"></i>
+          </div>
+        </a>
+        <a href="diary.html"
+          ><div class="about_nav_btn"><i class="fas fa-book"></i></div>
+        </a>
+      </nav>
+
+      <main class="about_main">
+        <div class="about_main_title_box">
+          <div class="about_main_title_card">
+            <div class="about_main_title_img"></div>
+            <div class="about_main_title_git">
+              SJR <i class="fab fa-github"></i>
+            </div>
+            <div class="about_main_title_text"></div>
+          </div>
+          <div class="about_main_title_greeting_box">
+            <div class="about_main_title_greeting">안녕하세요</div>
+            <div class="about_main_title_greeting">
+              신입개발자 심재륜입니다.
+            </div>
+          </div>
+        </div>
+        <div class="about_main_status_box">
+          <div class="about_main_status">
+            이 사이트는<br />
+            HTML / CSS / JAVASCRIPT 로 만들어졌습니다.
+          </div>
+          <div class="about_main_status">
+            관심이 있으시다면<br />
+            <a href="tlawofbs123@naver.com">tlawofbs123@naver.com</a><br />
+            이메일로 연락주시면 다른 자료들도 보내드리겠습니다.
+          </div>
+          <div class="about_main_status">
+            열심히 잘 하겠습니다!
+          </div>
+        </div>
+      </main>
+      <section class="photo_section">
+        <div class="photo_left_btn">
+          <button type="button" onclick="prevClick()">
+            <i class="fas fa-angle-left"></i>
+          </button>
+        </div>
+        <div class="photo_img_box">
+          <div class="photo_img photo_img1 showing"></div>
+          <div class="photo_img photo_img2"></div>
+          <div class="photo_img photo_img3"></div>
+          <div class="photo_img photo_img4"></div>
+          <div class="photo_img photo_img5"></div>
+        </div>
+        <div class="photo_right_btn">
+          <button type="button" onclick="nextClick()">
+            <i class="fas fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
+    </div>
+    <script src="js/photo.js"></script>
+  </body>
+</html>

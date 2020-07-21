@@ -1,0 +1,115 @@
+.about_main {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about_main_title_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_main_title_card > div {
+  margin-top: 2rem;
+}
+
+.about_main_title_img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 15rem;
+  background: blue;
+}
+
+.about_main_title_git {
+  font-size: 2rem;
+}
+
+.about_main_title_text {
+  width: 10rem;
+  height: 3rem;
+  background: tomato;
+}
+
+.about_main_title_greeting_box {
+  margin-left: 5rem;
+}
+
+.about_main_title_greeting:first-child {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.about_main_title_greeting:last-child {
+  font-size: 2rem;
+  color: #999;
+}
+
+.about_main_status_box {
+  margin-top: 5rem;
+}
+
+.about_main_status {
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  color: #666;
+}
+
+.about_section {
+  width: 60%;
+  background-color: white;
+  margin: 5rem;
+  margin-left: 10rem;
+  padding: 5rem;
+  border-radius: 1rem;
+  overflow: scroll;
+}
+
+.about_section_header_box {
+  display: flex;
+}
+
+.about_section_lheader {
+  width: 80%;
+}
+
+.about_section_rheader {
+  width: 20%;
+  margin-left: 5rem;
+}
+
+.about_section_lheader_title {
+  font-weight: 700;
+}
+
+.about_section_lheader_text {
+  margin-top: 3rem;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  line-height: 5rem;
+  opacity: 0.5;
+}
+
+.about_section_rheader_title {
+  font-weight: 700;
+}
+
+.about_section_rheader_content {
+  margin-top: 3rem;
+  opacity: 0.7;
+}
+
+.about_section_content_card {
+  margin-top: 3rem;
+  display: flex;
+}
+
+.about_section_content img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 5rem;
+}
