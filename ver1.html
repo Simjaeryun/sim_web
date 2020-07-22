@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/ed17b3b742.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .box {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid black;
+        width: 100px;
+      }
+
+      .btn {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed black;
+        position: relative;
+      }
+
+      .sub_btn {
+        position: relative;
+        left: 10px;
+        display: none;
+      }
+
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="box">
+      <li class="btn" onclick="handleClick()">
+        메뉴1 <i class="fas fa-angle-down"></i>
+        <ul class="sub_btn">
+          <li class="sub_menu">서브메뉴</li>
+          <li class="sub_menu">서브메뉴</li>
+          <li class="sub_menu">서브메뉴</li>
+        </ul>
+      </li>
+      <li class="btn">
+        메뉴2 <i class="fas fa-angle-down"></i>
+        <ul class="sub_btn">
+          <li class="sub_menu">서브메뉴</li>
+          <li class="sub_menu">서브메뉴</li>
+          <li class="sub_menu">서브메뉴</li>
+        </ul>
+      </li>
+      <li class="btn">
+        메뉴3 <i class="fas fa-angle-down"></i>
+        <ul class="sub_btn">
+          <li class="sub_menu">서브메뉴</li>
+          <li class="sub_menu">서브메뉴</li>
+          <li class="sub_menu">서브메뉴</li>
+        </ul>
+      </li>
+      <li class="btn">
+        메뉴4 <i class="fas fa-angle-down"></i>
+        <ul class="sub_btn">
+          <li class="sub_menu">서브메뉴</li>
+          <li class="sub_menu">서브메뉴</li>
+          <li class="sub_menu">서브메뉴</li>
+        </ul>
+      </li>
+      <li class="btn">
+        메뉴5 <i class="fas fa-angle-down"></i>
+        <ul class="sub_btn">
+          <li class="sub_menu">서브메뉴</li>
+          <li class="sub_menu">서브메뉴</li>
+          <li class="sub_menu">서브메뉴</li>
+        </ul>
+      </li>
+    </ul>
+    <script src="jquery.js"></script>
+    <script>
+      /*
+      $(".btn").click(function () {
+        $(this).children(".sub_btn").toggle();
+        if ($(".sub_btn").css("display") == "block") {
+          $(this)
+            .children("i")
+            .removeClass("fa-angle-down")
+            .addClass("fa-angle-up");
+        } else {
+          $(this)
+            .children("i")
+            .removeClass("fa-angle-up")
+            .addClass("fa-angle-down");
+        }
+      });
+
+      */
+      const subBtn = document.querySelector(".sub_btn"),
+        btn = document.querySelector(".btn"),
+        btnIcon = btn.querySelector("i");
+      const SHOW = "show";
+
+      function handleClick() {
+        const showMenu = document.querySelector(`.${SHOW}`);
+        if (showMenu) {
+          subBtn.classList.remove(SHOW);
+          btnIcon.classList.remove("fa-angle-up");
+          btnIcon.classList.add("fa-angle-down");
+        } else {
+          subBtn.classList.add(SHOW);
+          btnIcon.classList.remove("fa-angle-down");
+          btnIcon.classList.add("fa-angle-up");
+        }
+      }
+    </script>
+  </body>
+</html>

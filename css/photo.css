@@ -6,14 +6,14 @@
 }
 
 .photo_img_box {
-  width: 60rem;
-  height: 60rem;
+  width: 50rem;
+  height: 50rem;
   position: relative;
 }
 
 .photo_img {
-  width: 60rem;
-  height: 60rem;
+  width: 50rem;
+  height: 50rem;
   position: absolute;
   border-radius: 1rem;
   opacity: 0;
