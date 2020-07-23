@@ -29,6 +29,12 @@ a {
   background: #ececec;
 }
 
+.photo_container {
+  display: flex;
+  height: 100vh;
+  background: #ececec;
+}
+
 .about_nav {
   width: 10%;
   width: 15rem;
@@ -78,6 +84,14 @@ a {
 @media (max-width: 1418px) {
   .container {
     display: block;
+    height: auto;
+    padding-bottom: 20rem;
+  }
+
+  .photo_container {
+    display: block;
+    height: auto;
+    height: 100vh;
   }
 
   .about_nav {
@@ -105,8 +119,8 @@ a {
   }
 
   .about_section {
-    margin: auto;
     background: none;
+    margin: auto;
   }
 
   .photo_section {
@@ -126,6 +140,10 @@ a {
 @media (max-width: 925px) {
   html {
     font-size: 7px;
+  }
+
+  .container {
+    height: auto;
   }
 
   .about_section_content_card {
