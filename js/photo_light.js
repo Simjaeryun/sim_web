@@ -1,32 +1,30 @@
-const lightBtn = document.querySelector(".light_btn"),
-  container = document.querySelector(".container"),
-  photoContainer = document.querySelector(".photo_container"),
+const photoContainer = document.querySelector(".photo_container"),
   navBtn = document.querySelectorAll(".about_nav_btn")[0],
   navBtn2 = document.querySelectorAll(".about_nav_btn")[1],
   navBtn3 = document.querySelectorAll(".about_nav_btn")[2],
   navBtn4 = document.querySelectorAll(".about_nav_btn")[3],
   navBtn5 = document.querySelectorAll(".about_nav_btn")[4],
-  active = document.querySelector(".active"),
-  aboutSection = document.querySelector(".about_section"),
-  aboutSectionHeader = document.querySelector(".about_section_header_box");
+  leftBtn = document.querySelector(".photo_left_btn"),
+  rightBtn = document.querySelector(".photo_right_btn"),
+  active = document.querySelector(".active");
 
 function init() {
-  container.style.background = "rgb(236, 236, 236)";
+  photoContainer.style.background = "rgb(236, 236, 236)";
 }
 
 init();
 
-function light() {
-  if (container.style.backgroundColor == "rgb(236, 236, 236)") {
-    container.style.background = "#222";
+function photoLight() {
+  if (photoContainer.style.backgroundColor == "rgb(236, 236, 236)") {
+    photoContainer.style.background = "#222";
     navBtn.style.color = "yellow";
     navBtn2.style.color = "white";
     navBtn3.style.color = "white";
     navBtn4.style.color = "white";
     navBtn5.style.color = "white";
+    leftBtn.style.color = "white";
+    rightBtn.style.color = "white";
     active.style.color = "yellow";
-    aboutSection.style.background = "black";
-    aboutSectionHeader.style.color = "white";
     document.querySelector(".about_main_title_git").style.color = "white";
   } else {
     window.location.reload();
